@@ -6,6 +6,8 @@ define("DBUSER", "bestyellow");
 define("DBPASSWORD", "BVxfn7gaLppkcSty");
 
 // Routing (útválasztó) beállításai.
+define("PREFIX", "api");
+define("SQLDIR", "sql");
 $router = array(
     // Select kérések.
     "/customers" => "all_customer.sql",
