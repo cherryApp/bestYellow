@@ -23,9 +23,9 @@ interfész (kapcsolódási felület), amin keresztül programozhatunk egy alkalm
 ### Admin felület
 > A frontend oldali admin felületet sablon alapján készítsétek el. Ehhez itt találtok sablonokat és segítséget: 
 [SB Admin](https://startbootstrap.com/template-overviews/sb-admin/)  
-[SB Admin 1&2](https://startbootstrap.com/template-categories/admin-dashboard/)
-[Gentellela !Expert](https://github.com/puikinsh/gentelella)
-[Metis !Intermadiate](https://github.com/puikinsh/Bootstrap-Admin-Template)
+[SB Admin 1&2](https://startbootstrap.com/template-categories/admin-dashboard/)  
+[Gentellela !Expert](https://github.com/puikinsh/gentelella)  
+[Metis !Intermadiate](https://github.com/puikinsh/Bootstrap-Admin-Template)  
 
 ### Admin felület - JS
 > Mellékeltem JAVASCRIPT függvényeket a main.js fájlban. Ezekkel kész kommunikációt tudtok folytatni a PHP API -val. A függvények előtt kommentben röviden le van írva a használatuk.
