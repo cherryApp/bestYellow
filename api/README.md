@@ -21,7 +21,7 @@ interfész (kapcsolódási felület), amin keresztül programozhatunk egy alkalm
 
 ## Feladat
 ### Admin felület
-> A frontend oldali admin felületet sablon alapján készítsétek el. Ehhez itt találtok sablonokat és segítséget: 
+> A frontend oldali admin felületet sablon alapján készítsétek el. Ehhez itt találtok sablonokat és segítséget:  
 [SB Admin](https://startbootstrap.com/template-overviews/sb-admin/)  
 [SB Admin 1&2](https://startbootstrap.com/template-categories/admin-dashboard/)  
 [Gentellela !Expert](https://github.com/puikinsh/gentelella)  
