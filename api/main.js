@@ -33,6 +33,7 @@ function postData(url, data, callback) {
     xhr.send(data);
 }
 
+/*
 // Példák:
 // Teljes tábla lekérésére.
 getJson("api/customers", function(customers) {
@@ -69,3 +70,4 @@ var customer = {
 postData('api/customers/insert', customer, function(response) {
     console.log(response);
 });
+*/
