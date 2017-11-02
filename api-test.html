@@ -57,6 +57,7 @@
             for (var k in data[0]) {
                 head += "<th>"+(dict[k] || "-")+"</th>";
             }
+            head += "<th></th>";
             targetTable.querySelector("thead tr").innerHTML = head;
 
             var content = "";
@@ -65,6 +66,8 @@
                 for (var j in data[k]) {
                     tr += "<td>"+data[k][j]+"</td>";
                 }
+                tr += '<td><button onclick="clickRowBtn(this)" class="btn btn-info row-btn" data-id="'+data[k].customer_id+'"' +
+                        '>tovább</button></td>';
                 content += tr + "</tr>";
             }
             targetTable.querySelector("tbody").innerHTML = content;
@@ -77,6 +80,14 @@
                     fillTable(tableData);
                 });
             });
+
+        function clickRowBtn(btn) {
+            var id = btn.getAttribute("data-id");
+            console.log(id);
+            getJson("api/customers/"+id, function(customer) {
+                console.log(customer);
+            });
+        }
     
     
     

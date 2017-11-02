@@ -18,7 +18,7 @@ function getPath($router, $path) {
     } else {
         $keys = array_keys($router);
         foreach($keys as $key) {
-            $alt_key = preg_replace('/\:[a-z^\/]*/', '[a-z0-9A-Z]', $key);
+            $alt_key = preg_replace('/\:[a-z^\/]*/', '[a-z0-9A-Z^/]*', $key);
             $alt_key = str_replace('/', '\\/', $alt_key);
             preg_match('/^'.$alt_key.'$/', $path, $matches);
             if (count($matches) > 0) {
@@ -54,7 +54,7 @@ function insertVars($router_result, $url, $sql) {
     }
 
     // Add url data.
-    $alt_key = preg_replace('/\:[a-z^\/]*/', '([a-z0-9A-Z])', $router_result[0]);
+    $alt_key = preg_replace('/\:[a-z^\/]*/', '([a-z0-9A-Z^/]*)', $router_result[0]);
     $alt_key = str_replace('/', '\\/', $alt_key);
     preg_match('/'.$alt_key.'/', $url, $matches);
 
